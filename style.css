@@ -7,36 +7,53 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: Roboto, sans-serif;
 }
 
-/*margins*/
+button{
+    background-color: #3882F6;
+    color: #f9faf8;
+    border-radius: 5px;
+    padding: 5px 30px;
+    border: none;
+    height: 30px;
+    width: 120px;
+}
 
 body{
     display:flex;
-    justify-content: center;
-}
-
-.container{
-    display:flex;
     flex-direction: column;
-    width:1000px;
-    gap: 100px;
 }
 
 /*header*/
 
 header{
-    height: 50px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    background-color: #1f2937;
+}
 
+.header-content{
     display:flex;
     justify-content: space-between;
     align-items:center;
+    height: 50px;
+    width: 1000px;
 }
 
 ul{
     list-style-type: none;
     display:flex;
     gap:20px;
+    color: #e5e7eb;
+    font-size: 18px;
+}
+
+.logo{
+    font-size: 24px;
+    color: #f9faf8;
+    font-weight: 1000;
 }
 
 /*hero*/
@@ -44,14 +61,36 @@ ul{
 .hero{
     display:flex;
     justify-content: center;
+    align-items:center;
+    background-color: #1f2937;
 }
 
-.hero-left{
-
+.hero-content{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    width: 1000px;
+    padding: 100px 0;
+    gap: 53px;
 }
 
 .hero img{
-    width:400px;
+    width:500px;
+}
+
+h1{
+    color: #f9faf8;
+    font-size: 48px;
+    font-weight: 1000;
+}
+
+.hero p{
+    color: #e5e7eb;
+    font-size: 18px;
+}
+
+.hero button{
+    margin: 10px 0 0 0;
 }
 
 /*information*/
@@ -61,14 +100,36 @@ ul{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    padding: 50px 0 100px 0;
 }
 
 .information-boxes{
     display: flex;
+    gap: 50px;
 }
 
 .box{
-    width: 200px;
+    width: 150px;
+}
+
+h2{
+    font-size: 36px;
+    font-weight: 1000;
+    color: #1f2937;
+    padding: 0 0 50px 0;
+}
+
+.information img{
+    border-radius: 20px;
+    border: 4px solid #3882F6;
+    height: 150px;
+    width: 150px;
+}
+
+.information p{
+    text-align: center;
+    color: #1f2937;
 }
 
 /*quote*/
@@ -77,11 +138,27 @@ ul{
     display:flex;
     justify-content: center;
     align-items: center;
+    background-color: #e5e7eb;
 }
 
 .quote-block{
     display:flex;
-    width: 400px;
+    width: 662px;
+    padding: 100px 0;
+}
+
+.quote p{
+    color:#1f2937;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 100;
+}
+
+.quote footer{
+    text-align:end;
+    font-weight: 1000;
+    color: #1f2937;
+    font-size: 20px;
 }
 
 /*cta*/
@@ -94,14 +171,37 @@ ul{
 
 .cta-block{
     display:flex;
-    flex:1;
     justify-content: center;
-    gap: 100px;
+    align-items: center;
+    gap: 150px;
+    background-color: #3882F6;
+
+    height: 150px;
+    width: 1000px;
+    margin: 100px 0;
+    border-radius: 10px;
+}
+
+.cta button{
+    border: 2px solid #f9faf8;
+}
+
+h3{
+    color: #f9faf8;
+    font-size: 20px;
+    font-weight: 1000;
+}
+
+.cta p{
+    color:#e5e7eb;
 }
 
 /*footer*/
 
 .footer{
     text-align:center;
-    height:50px;
+    height:100px;
+    background-color: #1f2937;
+    padding: 40px;
+    color: #e5e7eb;
 }
